@@ -252,7 +252,7 @@ function Main()
   "皮肤",
   }, nil, "")
   if t == nil then end
-  if t==1 then GQ() end
+  if t==1 then QZ() end
   if t==2 then RW() end
   if t==3 then tk() end
   if t==4 then YX() end
@@ -264,12 +264,10 @@ function GQ()
   local t = gg.choice({
   "初始枪",
   "初始筒子",
-  "改枪列表",
   }, nil, "")
   if t == nil then Main() end
   if t==1 then qiang() end
   if t==2 then HJ() end
-  if t==3 then QZ() end
 end
 
 function GQa()
@@ -1084,7 +1082,7 @@ end
 
 --枪值 
 function QZ()
-  shu = gg.prompt({'枪值'},{9})
+  shu = gg.prompt({'枪值'})
   if shu == nil then
     GQ()
   else
