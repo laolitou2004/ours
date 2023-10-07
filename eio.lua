@@ -275,7 +275,7 @@ function GQa()
   "初始枪",
   "初始筒子",
   }, nil, "")
-  if t == nil then GQ() end
+  if t == nil then Main() end
   if t==1 then qianga() end
   if t==2 then HJa() end
 end
