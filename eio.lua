@@ -21,6 +21,15 @@ then waz=(
 "https://sharechain.qq.com/47c4dd267586e37e720d47922cbf79db"
 )
 
+--玩家37
+elseif mim == 
+--账号
+"376952" 
+then waz=(
+--密码
+"https://sharechain.qq.com/ba9efec4cc64b3e33e042b7324f53c33"
+)
+
 --玩家34
 elseif mim == 
 --账号
