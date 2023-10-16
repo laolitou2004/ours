@@ -247,7 +247,7 @@ else print("账号错误") os.exit() end end
 
 
 
-hk = 2
+hk = 1
 --[[
              hk
         1  本地调试
@@ -273,20 +273,23 @@ xiob=("错误代码1156，加群获得帮助")
 function Main()
   local t = gg.choice({
   "枪",
+  "全自动",
   "角色",
   "坦克",
   "外挂",
   "皮肤",
   }, nil, "")
   if t == nil then end
-  if t==1 then QZ() end
-  if t==2 then RW() end
-  if t==3 then tk() end
-  if t==4 then YX() end
-  if t==5 then PF() end
+  if t==1 then duquq() end
+  if t==2 then zidongqin() end
+  if t==3 then RW() end
+  if t==4 then tk() end
+  if t==5 then YX() end
+  if t==6 then PF() end
 end
 
 -----------------改枪
+--[[
 function GQ()
   local t = gg.choice({
   "初始枪",
@@ -347,7 +350,7 @@ function qianga()
   if t==6 then chana() end
   if t==7 then shouleia() end
 end
-
+--]]
 function m3a()
   gg.setRanges(32)
   local dataType = 4
@@ -1108,7 +1111,7 @@ end
 
 
 --枪值 
-function QZ()
+--[[function QZ()
   shu = gg.prompt({'枪值'})
   if shu == nil then
     GQ()
@@ -1127,7 +1130,7 @@ function QZ()
   end  
   oui1()
 end
-
+--]]
 
 
 
@@ -1524,4 +1527,234 @@ end
 
 
 D=gg.TYPE_DWORD E=gg.TYPE_DOUBLE F=gg.TYPE_FLOAT W=gg.TYPE_WORD B=gg.TYPE_BYTE X=gg.TYPE_XOR Q=gg.TYPE_QWORD 
-function SearchWrite(Search, Write, Type,Write1) gg.clearResults()  gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end if (#data > 0) then gg.toast("搜到"..#data.."条数据") local t = {}  local base = Search[1][2] for i=1, #data do for k, w in ipairs(Write) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].value = w[1]  t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] item[#item].freeze = false gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end gg.setValues(t) end for i=1, #data do for k, w in ipairs(Write1) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end end else gg.toast("搜索成功", false)  return false end else gg.toast("没搜到数据") return false end end function oui1() if shu[1] == '' then GQ() else gg.setVisible(false) gg.clearResults()  gg.searchNumber("2096015365;217;0;"..ux..uxb.."0;1765970123;161;0::4149", gg.TYPE_DWORD)  gg.searchNumber(""..uxa..";0::5", gg.TYPE_DWORD)  gg.searchNumber(""..uxa.."", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  ludq = gg.getResultCount()  luw = gg.getResults(ludq)  gg.clearResults()  gg.searchAddress(string.format("%X",luw[1].address-8),-1,gg.TYPE_DWORD)  louw = gg.getResults(1)  xpo = louw[1].value GQa() gg.clearResults() end end function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then t343() hushi3() xieerman3() gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end
+function SearchWrite(Search, Write, Type,Write1) gg.clearResults()  gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end if (#data > 0) then gg.toast("搜到"..#data.."条数据") local t = {}  local base = Search[1][2] for i=1, #data do for k, w in ipairs(Write) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].value = w[1]  t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] item[#item].freeze = false gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end gg.setValues(t) end for i=1, #data do for k, w in ipairs(Write1) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end end else gg.toast("ok", false)  return false end else gg.toast("没搜到数据") return false end end 
+
+
+
+function duquq()
+    local si={"m3","","喷子","","狙击","","机枪","","手枪","","铲子","","手雷","","筒子","",}
+    local sio={nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",}
+    local zio={"checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number",}
+    local shu=gg.prompt(si,sio,zio)
+    if shu == nil then
+        Main()
+    else
+        for x=1,8 do
+            if shu[1] == true then
+                if shu[2] == "0" then
+                    m3()
+                elseif shu[2] == "85" then
+                    xi = shu[2]
+                    duqiu1()
+                    m3a()
+                else
+                    xi = shu[2]
+                    duqiu()
+                    m3a()
+                end
+                shu[1]=false
+            elseif shu[3] == true then
+                if shu[4] == "0" then
+                    pen()
+                else
+                    xi = shu[4]
+                    duqiu()
+                    pena()
+                end
+                shu[3]=false
+            elseif shu[5] == true then
+                if shu[6] == "0" then
+                    ju()
+                else
+                    xi = shu[6]
+                    duqiu()
+                    jua()
+                end
+                shu[5]=false
+            elseif shu[7] == true then
+                if shu[8] == "0" then
+                    ji()
+                else
+                    xi = shu[8]
+                    duqiu()
+                    jia()
+                end
+                shu[7]=false
+            elseif shu[9] == true then
+                if shu[10] == "0" then
+                    shou()
+                else
+                    xi = shu[10]
+                    duqiu()
+                    shoua()
+                end
+                shu[9]=false           
+            elseif shu[11] == true then
+                if shu[12] == "0" then
+                    chan()
+                else
+                    xi = shu[12]
+                    duqiu()
+                    chana()
+                end
+                shu[11]=false
+            elseif shu[13] == true then
+                if shu[14] == "0" then
+                    shoulei()
+                else
+                    xi = shu[14]
+                    duqiu()
+                    shouleia()
+                end
+                shu[13]=false
+            elseif shu[15] == true then
+                if shu[16] == "0" then
+                    HJ()
+                else
+                    xi = shu[16]
+                    duqiu()
+                    HJa()
+                end
+                shu[15]=false    
+            else
+                Main()
+                return
+            end
+        end
+    end
+end
+
+function zidongqin()
+      local t = gg.choice({
+  "1",
+  }, nil, "")
+  if t == nil then Main() end
+  if t==1 then quanziat1() end
+
+end
+
+
+
+function quanziat1()
+    xi = "210"
+    duqiu()
+    m3a()
+    
+    xi = "203"
+    duqiu()
+    pena()
+    
+    xi = "208"
+    duqiu()
+    jua()
+    
+    xi = "207"
+    duqiu()
+    jia()
+    
+    xi = "209"
+    duqiu()
+    shoua()
+    
+    xi = "179"
+    duqiu()
+    chana()
+    
+    xi = "48"
+    duqiu()
+    shouleia()
+    
+    xi = "202"
+    duqiu()
+    Hj2()Hj7()
+end
+
+
+
+function duqiu1()
+    ouw = qinging..xi.."\n"
+    bx = content:match(ouw.."qining (.-)\n")
+    if bx==nil then
+        gg.alert(2)
+    else
+        --gg.alert(bx)
+        xpo = bx
+    end
+end
+
+qinging = "qining "
+
+function duqiu()
+    ouw = qinging..xi.."\n"
+    oueo = qinging..xpui.."\n"
+    bx = content:match(ouw..oueo.."qining (.-)\n")
+    if bx==nil then
+        gg.alert(1)
+    else
+        --gg.alert(bx)
+        xpo = bx
+    end    
+end
+
+
+
+function duquqzing()
+    local function getAddressValues(address, numAddresses, valueType)
+        local t = {}
+        for i = 1, numAddresses do
+            local newAddress = address - (4 * i)
+            t[i] = {}
+            t[i].address = newAddress
+            t[i].flags = valueType
+        end    
+        for i = 1, numAddresses do
+            local newAddress = address + (4 * i)
+            t[numAddresses + i] = {}
+            t[numAddresses + i].address = newAddress
+            t[numAddresses + i].flags = valueType
+        end    
+        t = gg.getValues(t)
+        table.sort(t, function(a, b) return a.address > b.address end)
+        return t
+    end
+    local function getAvailableFilename_FeatureCode()
+        local basePath = gg.getFile():match("(.*/)") -- "/storage/emulated/0/Notes/"
+        local filename
+        local i = 1
+        while true do
+            filename = basePath .. string.format("获取数据%02d.txt", i)
+            local file = io.open(filename, "r")
+            if file == nil then
+                break
+            end
+            file:close()
+            i = i + 1
+        end
+        return filename
+    end
+    gg.setVisible(false) 
+    gg.clearResults()  
+    gg.searchNumber("2096015365;217;0;124732783;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
+    gg.searchNumber("85;0::5", gg.TYPE_DWORD)  
+    gg.searchNumber("85", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  
+    ludq = gg.getResultCount()  
+    luw = gg.getResults(ludq)  
+    gg.clearResults()  
+    gg.searchAddress(string.format("%X",luw[1].address-4),-1,gg.TYPE_DWORD)  
+    louw = gg.getResults(1)  
+    xpui = louw[1].value
+    gg.clearResults()              
+    local address = luw[1].address-4
+    if address == nil then
+        return
+    end        
+    local values = getAddressValues(address, "517", gg.TYPE_DWORD)    
+    content = ""
+    for i, v in ipairs(values) do
+        content = content .. string.format("qining %s\n", tostring(v.value))
+    end    
+end
+
+
+
+function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then duquqzing() gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end
