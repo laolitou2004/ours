@@ -1,3 +1,11 @@
+hk = 2
+--[[
+             hk
+        1  本地调试
+        2  联网模式
+--]]
+
+
 function mimer()
 
 
@@ -247,12 +255,7 @@ else print("账号错误") os.exit() end end
 
 
 
-hk = 2
---[[
-             hk
-        1  本地调试
-        2  联网模式
---]]
+
 
 
 
@@ -262,9 +265,15 @@ xiob=("错误代码1156，加群获得帮助")
 
 
 
-
-
-
+function Main1()
+  local t = gg.choice({
+  "主功能",
+  "存档"
+  }, nil, "")
+  if t == nil then end
+  if t==1 then fingongn() end
+  if t==2 then csi1() cundann() end
+end
 
 
 
@@ -272,21 +281,56 @@ xiob=("错误代码1156，加群获得帮助")
 
 function Main()
   local t = gg.choice({
-  "枪",
-  "全自动",
+  "半自动 改枪",
+  "全自动 改枪",
+  "皮肤",
   "角色",
   "坦克",
-  "外挂",
-  "皮肤",
+  "外挂"
   }, nil, "")
   if t == nil then end
   if t==1 then duquq() end
   if t==2 then zidongqin() end
-  if t==3 then RW() end
-  if t==4 then tk() t343() hushi3() xieerman3() end
-  if t==5 then YX() end
-  if t==6 then PF() end
+  if t==3 then PF() end
+  if t==4 then RW() end
+  if t==5 then tk() t343() hushi3() xieerman3() end
+  if t==6 then YX() end
 end
+
+
+function chundang()
+  local t = gg.choice({
+  zhang1,
+  zhang2,
+  zhang3,
+  "清除游戏存档"
+  }, nil, "")
+  if t == nil then Main1() end
+  if t==1 then dzizhi1() end
+  if t==2 then dzizhi2() end
+  if t==3 then dzizhi3() end
+  if t==4 then qingyou() end
+end
+
+zhang1 = ""
+zhang2 = ""
+zhang3 = ""
+
+function cundann()
+iuix = io.open("/storage/emulated/0/data")
+if not iuix then
+
+gg.alert("存档脚本初始化，联系管理(只需进行一次)")
+Main()
+else
+chundang()
+end
+end
+
+
+
+
+
 
 -----------------改枪
 --[[
@@ -1666,7 +1710,7 @@ function quanziat1()
     
     xi = "202"
     duqiu()
-    Hj2()Hj7()
+    Hj2a()Hj8()
 end
 
 
@@ -1717,6 +1761,7 @@ function duquqzing()
         table.sort(t, function(a, b) return a.address > b.address end)
         return t
     end
+--[[
     local function getAvailableFilename_FeatureCode()
         local basePath = gg.getFile():match("(.*/)") -- "/storage/emulated/0/Notes/"
         local filename
@@ -1732,6 +1777,7 @@ function duquqzing()
         end
         return filename
     end
+--]]
     gg.setVisible(false) 
     gg.clearResults()  
     gg.searchNumber("2096015365;217;0;124732783;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
@@ -1753,8 +1799,152 @@ function duquqzing()
     for i, v in ipairs(values) do
         content = content .. string.format("qining %s\n", tostring(v.value))
     end    
+    
+    --ouwiq = "qining 161\n"
+    gailvj = content:match("qining 161\nqining (.-)\nqining 1765970123\n")
+    if gailvj==nil then
+        duquqzing()
+    end
+    --print(gailvj)
+    --.."qining (.-)\n"
+end
+
+function dzizhi1()
+  local t = gg.choice({
+  "存档",
+  "读取",
+  "删除"
+  }, nil, "")
+  if t == nil then end
+  if t==1 then xieru1() end
+  if t==2 then duqu1() end
+  if t==3 then shanchu1()end
+  csi1()
+  chundang()
+end
+
+function dzizhi2()
+  local t = gg.choice({
+  "存档",
+  "读取",
+  "删除"
+  }, nil, "")
+  if t == nil then end
+  if t==1 then xieru2() end
+  if t==2 then duqu2() end
+  if t==3 then shanchu2()end
+  csi1()
+  chundang()
+end
+
+function dzizhi3()
+  local t = gg.choice({
+  "存档",
+  "读取",
+  "删除"
+  }, nil, "")
+  if t == nil then end
+  if t==1 then xieru3() end
+  if t==2 then duqu3() end
+  if t==3 then shanchu3()end
+  csi1()
+  chundang()
+end
+
+function csi1()
+    iux = io.open("/storage/emulated/0/账号1")
+    if not iux then
+    zhang1="(空存档)"
+    else
+    zhang1="存档1"
+    end
+    iux = io.open("/storage/emulated/0/账号2")
+    if not iux then
+    zhang2="(空存档)"
+    else
+    zhang2="存档2"
+    end
+    iux = io.open("/storage/emulated/0/账号3")
+    if not iux then
+    zhang3="(空存档)"
+    else
+    zhang3="存档3"
+    end
+end
+
+
+function xieru1()
+        iux = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/账号1","w+"):write(iux)
+    iuop:close()
+end
+
+function xieru2()
+        iux = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/账号2","w+"):write(iux)
+    iuop:close()
+end
+
+function xieru3()
+        iux = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/账号3","w+"):write(iux)
+    iuop:close()
 end
 
 
 
-function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then duquqzing() gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end
+
+function duqu1()
+    iux = io.open("/storage/emulated/0/账号1","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","w+"):write(iux)
+    iuop:close()
+end
+
+
+function duqu2()
+    iux = io.open("/storage/emulated/0/账号2","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","w+"):write(iux)
+    iuop:close()
+end
+
+--
+function duqu3()
+    iux = io.open("/storage/emulated/0/账号3","r"):read("*a")
+  
+   iuop = io.open("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml","w+"):write(iux)
+    iuop:close()
+end
+
+
+
+
+function shanchu1()
+    os.remove("/storage/emulated/0/账号1")
+end
+
+function shanchu2()
+    os.remove("/storage/emulated/0/账号2")
+end
+
+function shanchu3()
+    os.remove("/storage/emulated/0/账号3")
+end
+
+
+function qingyou()
+    os.remove("/storage/emulated/0/data/data/com.gamedevltd.wwh/shared_prefs/com.gamedevltd.wwh.v2.playerprefs.xml")
+    chundang()
+end
+
+function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
+function fingongn()
+while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then duquqzing() gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end end
+
+for m=1, 1 do
+Main1()
+end
