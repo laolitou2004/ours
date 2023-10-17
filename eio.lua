@@ -283,7 +283,7 @@ function Main()
   if t==1 then duquq() end
   if t==2 then zidongqin() end
   if t==3 then RW() end
-  if t==4 then tk() end
+  if t==4 then tk() t343() hushi3() xieerman3() end
   if t==5 then YX() end
   if t==6 then PF() end
 end
@@ -1249,7 +1249,7 @@ end
 function t343()
   gg.setRanges(32)
   local dataType = 4
-  local tb1 = {{13,0},{2147483647,-0x134},{257,-0x128},{2,-0x12c},}
+  local tb1 = {{13,0},{2147483647,-0x134},{2,-0x12c},}
   local tb3 = {}
   local tb2 = {
   {0,0x12c,["Ty"]=D},
