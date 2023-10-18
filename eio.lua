@@ -1780,7 +1780,7 @@ function duquqzing()
 --]]
     gg.setVisible(false) 
     gg.clearResults()  
-    gg.searchNumber("2096015365;217;0;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
+    gg.searchNumber("2096015365;217;0;124732783;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
     gg.searchNumber("85;0::5", gg.TYPE_DWORD)  
     gg.searchNumber("85", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  
     ludq = gg.getResultCount()  
