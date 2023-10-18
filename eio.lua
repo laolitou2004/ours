@@ -1436,6 +1436,11 @@ function YS()
   end
 end
   
+  
+  --坦克连发 蹲着1站着0死了1活着0
+  
+  
+  
 --移速
 function yisu1()
   if shu[1] == '' then
@@ -1444,7 +1449,14 @@ function yisu1()
   qyis()
   gg.setRanges(32)
   local dataType = 16
-  local tb1 = {{2.5,0},{3.5,-0x18},{0.5,0x16c},{1.401298464324817E-45,0x1fc},{9.183689745645554E-41,0x280},{0.0,0x10},}
+  local tb1 = {
+  {2.5,0},
+  {3.5,-0x18},
+  {0.5,0x16c},
+  --{1.401298464324817E-45,0x1fc},
+  {9.183689745645554E-41,0x280},
+  {0.0,0x10},
+  }
   local tb3 = {}
   local tb2 = {
   {yisu2,0x208,2,"移速",["Ty"]=F},
@@ -1742,7 +1754,7 @@ end
 
 
 
-function duquqzing()
+function duquqzing1()
     local function getAddressValues(address, numAddresses, valueType)
         local t = {}
         for i = 1, numAddresses do
@@ -1806,6 +1818,74 @@ function duquqzing()
         duquqzing()
     end
     --print(gailvj)
+    --.."qining (.-)\n"
+end
+
+function duquqzing()
+    local function getAddressValues(address, numAddresses, valueType)
+        local t = {}
+        for i = 1, numAddresses do
+            local newAddress = address - (4 * i)
+            t[i] = {}
+            t[i].address = newAddress
+            t[i].flags = valueType
+        end    
+        for i = 1, numAddresses do
+            local newAddress = address + (4 * i)
+            t[numAddresses + i] = {}
+            t[numAddresses + i].address = newAddress
+            t[numAddresses + i].flags = valueType
+        end    
+        t = gg.getValues(t)
+        table.sort(t, function(a, b) return a.address > b.address end)
+        return t
+    end
+--[[
+    local function getAvailableFilename_FeatureCode()
+        local basePath = gg.getFile():match("(.*/)") -- "/storage/emulated/0/Notes/"
+        local filename
+        local i = 1
+        while true do
+            filename = basePath .. string.format("获取数据%02d.txt", i)
+            local file = io.open(filename, "r")
+            if file == nil then
+                break
+            end
+            file:close()
+            i = i + 1
+        end
+        return filename
+    end
+--]]
+    gg.setVisible(false) 
+    gg.clearResults()  
+    
+    gg.searchNumber("172350359;126;0;1698905296;144;0;1302600475;213;0::4149", gg.TYPE_DWORD)  
+    gg.searchNumber("144;0::5", gg.TYPE_DWORD)  
+    gg.searchNumber("144", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  
+    ludq = gg.getResultCount()  
+    luw = gg.getResults(ludq)  
+    gg.clearResults()  
+    gg.searchAddress(string.format("%X",luw[1].address-4),-1,gg.TYPE_DWORD)  
+    louw = gg.getResults(1)  
+    xpui = louw[1].value
+    gg.clearResults()              
+    local address = luw[1].address-4
+    if address == nil then
+        return
+    end        
+    local values = getAddressValues(address, "517", gg.TYPE_DWORD)    
+    content = ""
+    for i, v in ipairs(values) do
+        content = content .. string.format("qining %s\n", tostring(v.value))
+    end    
+    
+    --ouwiq = "qining 161\n"
+    gailvj = content:match("qining 213\nqining (.-)\nqining 1302600475\n")
+    if gailvj==nil then
+        duquqzing1()
+    end
+    --print(gailvj) --172350359;126;1698905296;144;1302600475;213:4145
     --.."qining (.-)\n"
 end
 
@@ -1943,7 +2023,9 @@ end
 
 function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
 function fingongn()
-while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then duquqzing() gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end end
+while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then 
+duquqzing1()
+ gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end end
 
 for m=1, 1 do
 Main1()
