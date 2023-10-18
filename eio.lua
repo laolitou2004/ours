@@ -293,8 +293,24 @@ function Main()
   if t==2 then zidongqin() end
   if t==3 then PF() end
   if t==4 then RW() end
-  if t==5 then tk() t343() hushi3() xieerman3() end
+  if t==5 then potank() end
   if t==6 then YX() end
+end
+
+iotnx = "1"
+
+function potank()
+
+    for maslin = iotnx,1 do
+    --gg.toast("11")
+    
+    t343() hushi3() xieerman3()
+    
+end
+    iotnx = iotnx+1
+    if iotnx >2 then
+     tk()
+     end
 end
 
 
@@ -1283,7 +1299,7 @@ function t342()
   local tb3 = {}
   local tb2 = {
   {999,0,2,"坦克炮",["Ty"]=D},
-  {999,0x4},
+  {999,0x4,"坦克炮",["Ty"]=D},
   {0,0x8,2,"坦克炮",["Ty"]=D},
   {0,0xc,2,"坦克炮",["Ty"]=D},
   }
@@ -1293,7 +1309,12 @@ end
 function t343()
   gg.setRanges(32)
   local dataType = 4
-  local tb1 = {{13,0},{2147483647,-0x134},{2,-0x12c},}
+  local tb1 = {
+  {13,0},
+  {9,416},
+  {5,624},
+  {6,0x340}
+  }
   local tb3 = {}
   local tb2 = {
   {0,0x12c,["Ty"]=D},
@@ -1375,7 +1396,7 @@ function YX()
   "飞天",
   }, nil, "")
   if t == nil then Main() end
-  if t==1 then FW2() FW1() end
+  if t==1 then FW2() end
   if t==2 then YS() end
   if t==3 then FT() end
 end
@@ -1405,6 +1426,7 @@ function FW2()
   else
   shuing = shu[1]
   fan1()
+  FW1() 
   end
 end
 
