@@ -276,7 +276,8 @@ function Main()
   "皮肤",
   "角色",
   "坦克",
-  "外挂"
+  "外挂",
+  "无敌"
   }, nil, "")
   if t == nil then end
   if t==1 then duquq() end
@@ -285,6 +286,7 @@ function Main()
   if t==4 then RW() end
   if t==5 then potank() end
   if t==6 then YX() end
+  if t==7 then wydi() end
 end
 
 iotnx = "1"
@@ -1104,6 +1106,141 @@ end
 end
 --]]
 
+--1q
+
+
+function wydi2()
+  shu = gg.prompt(
+  {'攻击[1;100]','侦查[1;100]','狙击[1;100]','机枪[1;100]','医疗[1;100]'},
+  {gonhjiz,zhengcz,jujiz,jiqiangz,yiliaoz},
+  {"number","number","number","number","number"}
+  )
+    if shu == nil then 
+        Main()
+    else
+    --[[
+            gg.toast(shu[1])
+            gg.sleep(500)
+            gg.toast("1")
+            gg.sleep(500)
+            gg.toast(gonhjiz)
+            gg.sleep(500)
+            --]]
+        if ( tostring(shu[1]) ~= tostring(gonhjiz) ) then     
+            gonhjiz = shu[1]
+            wydi1()
+           -- gg.toast("1")
+        end
+        if ( tostring(shu[2]) ~= tostring(zhengcz) ) then     
+            zhengcz = shu[2]
+            wydi12()
+        end
+        if ( tostring(shu[3]) ~= tostring(jujiz) ) then
+            jujiz = shu[3]
+            wydi13()
+        end
+        if ( tostring(shu[4]) ~= tostring(jiqiangz) ) then
+            jiqiangz = shu[4]
+            wydi14()
+        end
+        if ( tostring(shu[5]) ~= tostring(yiliaoz) ) then
+            yiliaoz = shu[5]
+            wydi15()
+        end    
+    end
+  
+end
+
+function wydi15()       
+if yiliao == nil then
+else
+  local  x = {}
+    x[1] = {}
+    x[1].address = yiliao
+    x[1].value = yiliaoz
+    x[1].flags = F
+    
+    gg.setValues(x)
+    end
+    --gg.clearResults()  
+    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+end
+
+
+function wydi14()       
+if jiqiang == nil then
+else
+  local  x = {}
+    x[1] = {}
+    x[1].address = jiqiang
+    x[1].value = jiqiangz
+    x[1].flags = F
+    
+    gg.setValues(x)
+    end
+    --gg.clearResults()  
+    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+end
+
+
+function wydi13() 
+      if juji == nil then
+else
+  local  x = {}
+    x[1] = {}
+    x[1].address = juji
+    x[1].value = jujiz
+    x[1].flags = F
+    
+    gg.setValues(x)
+    end
+    --gg.clearResults()  
+    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+end
+
+function wydi12()       
+if zhengcha == nil then
+else
+  local  x = {}
+    x[1] = {}
+    x[1].address = zhengcha
+    x[1].value = zhengcz
+    x[1].flags = F
+    
+    gg.setValues(x)
+    end
+    --gg.clearResults()  
+    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+end
+
+function wydi1()       
+--print(gongji)
+if gongji == nil then
+else
+  local  x = {}
+    x[1] = {}
+    x[1].address = gongji
+    x[1].value = gonhjiz
+    x[1].flags = F
+    
+    gg.setValues(x)
+   end
+    
+    --gg.clearResults()  
+    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+end
+
+iotni = "1"
+function wydi()  
+    for maslin = iotni,1 do    
+        GJa() ZCa() JJa() JQa() yla()
+    end
+    iotni = iotni+1
+    if iotni >2 then
+        wydi2()
+    end
+end
+
 
 
 ----------改角色
@@ -1113,13 +1250,16 @@ function RW()
   "侦查",
   "狙击",
   "机枪",
+  "医疗"
   }, nil, "")
   if t == nil then Main() end
   if t==1 then GJ() end
   if t==2 then ZC() end
   if t==3 then JJ() end
   if t==4 then JQ() end
+  if t==5 then yl() end
 end
+
 
 
 function GJ()
@@ -1132,23 +1272,71 @@ function GJ()
   {91,-0x7c,1,"攻击参数",["Ty"]=F},
   {0,-0x78,["Ty"]=F},
   }
+  moshinu = "1"
   SearchWrite(tb1,tb2,dataType,tb3)
 end
+
 
 
 function ZC()
   gg.setRanges(32)
   local dataType = 4
-  local tb1 = {{78,0},{78,-0x40},{12,0x1c0},{71,0x80}}
+  local tb1 = {{69,0},{65,-0x40},{50,0x80,},{52,0x40},}
   local tb3 = {}
   local tb2 = {
-  {80,0x0,1,"侦查属性",["Ty"]=D},
-  {92,0x4,1,"侦查参数",["Ty"]=F},
-  {0,0x8,["Ty"]=F},
+  {80,-0x780,1,"侦查属性",["Ty"]=D},
+  {92,-0x77c,1,"侦查参数",["Ty"]=F},
+  {0,-0x778,["Ty"]=F},
   }
+  moshinu = "2"
   SearchWrite(tb1,tb2,dataType,tb3)
 end
 
+function JJ1()
+if juji == nil then
+else
+  local ox = {}
+    ox[1] = {}
+    ox[1].address = juji
+    --x[1].value = gonhjiz
+    ox[1].flags = F
+    ox[1].freeze = false
+    ox[1].name = "狙击参数"
+    gg.addListItems(ox)
+local ox = {}
+    ox[1] = {}
+    ox[1].address = juji-4
+    --x[1].value = gonhjiz
+    ox[1].flags = D
+    ox[1].freeze = false
+    ox[1].name = "狙击属性"
+    gg.addListItems(ox)
+    end
+end
+
+
+
+function JQ1()
+if jiqiang == nil then
+else
+  local ox = {}
+    ox[1] = {}
+    ox[1].address = jiqiang
+    --x[1].value = gonhjiz
+    ox[1].flags = F
+    ox[1].freeze = false
+    ox[1].name = "机枪参数"
+    gg.addListItems(ox)
+local ox = {}
+    ox[1] = {}
+    ox[1].address = jiqiang-4
+    --x[1].value = gonhjiz
+    ox[1].flags = D
+    ox[1].freeze = false
+    ox[1].name = "机枪属性"
+    gg.addListItems(ox)
+    end
+end
 
 function JJ()
   gg.setRanges(32)
@@ -1160,7 +1348,9 @@ function JJ()
   {99,0x4,1,"狙击参数",["Ty"]=F},
   {0,0x8,["Ty"]=F},
   }
+  moshinu = "3"
   SearchWrite(tb1,tb2,dataType,tb3)
+  JJ1()
 end
 
 
@@ -1175,9 +1365,101 @@ function JQ()
   {94,0x4,1,"机枪参数",["Ty"]=F},
   {0,0x8,["Ty"]=F},
   }
+  moshinu = "4"
+  SearchWrite(tb1,tb2,dataType,tb3)
+  JQ1()
+end
+
+function yl()--提取医疗兵56
+    gg.setRanges(32)
+    local dataType = 4
+    local tb1 = {{69,0},{65,-0x40},{52,0x40,},{50,0x80},}
+    local tb3 = {}
+    local tb2 = {
+    {80,-0xc0,1,"医疗属性",["Ty"]=D},
+    {95,-0xbc,1,"医疗参数",["Ty"]=F},
+    {0,-0xb8,["Ty"]=F},
+    }
+    moshinu = "5"
+    SearchWrite(tb1,tb2,dataType,tb3)
+end
+
+
+
+function GJa()
+  gg.setRanges(32)
+  local dataType = 4
+  local tb1 = {{69,0},{65,-0x40},{52,0x40},{50,0x80}}
+  local tb3 = {}
+  local tb2 = {
+  {80,-0x80,["Ty"]=D},
+  {91,-0x7c,["Ty"]=F},
+  {0,-0x78,["Ty"]=F},
+  }
+  moshinu = "1"
   SearchWrite(tb1,tb2,dataType,tb3)
 end
 
+
+
+function ZCa()
+  gg.setRanges(32)
+  local dataType = 4
+  local tb1 = {{69,0},{65,-0x40},{50,0x80,},{52,0x40},}
+  local tb3 = {}
+  local tb2 = {
+  {80,-0x780,["Ty"]=D},
+  {92,-0x77c,["Ty"]=F},
+  {0,-0x778,["Ty"]=F},
+  }
+  moshinu = "2"
+  SearchWrite(tb1,tb2,dataType,tb3)
+end
+
+
+function JJa()
+  gg.setRanges(32)
+  local dataType = 4
+  local tb1 = {{61,0},{12,-0x40},{72,0x40},{5,0x80}}
+  local tb3 = {}
+  local tb2 = {
+  {80,0x0,["Ty"]=D},
+  {99,0x4,["Ty"]=F},
+  {0,0x8,["Ty"]=F},
+  }
+  moshinu = "3"
+  SearchWrite(tb1,tb2,dataType,tb3)
+end
+
+
+
+function JQa()
+  gg.setRanges(32)
+  local dataType = 4
+  local tb1 = {{55,0},{57,-0x40},{71,0x180},{79,0x80}}
+  local tb3 = {}
+  local tb2 = {
+  {80,0x0,["Ty"]=D},
+  {94,0x4,["Ty"]=F},
+  {0,0x8,["Ty"]=F},
+  }
+  moshinu = "4"
+  SearchWrite(tb1,tb2,dataType,tb3)
+end
+
+function yla()--提取医疗兵56
+    gg.setRanges(32)
+    local dataType = 4
+    local tb1 = {{69,0},{65,-0x40},{52,0x40,},{50,0x80},}
+    local tb3 = {}
+    local tb2 = {
+    {80,-0xc0,["Ty"]=D},
+    {95,-0xbc,["Ty"]=F},
+    {0,-0xb8,["Ty"]=F},
+    }
+    moshinu = "5"
+    SearchWrite(tb1,tb2,dataType,tb3)
+end
 
 ----------改坦克
 function tk()
@@ -1517,7 +1799,109 @@ end
 
 
 D=gg.TYPE_DWORD E=gg.TYPE_DOUBLE F=gg.TYPE_FLOAT W=gg.TYPE_WORD B=gg.TYPE_BYTE X=gg.TYPE_XOR Q=gg.TYPE_QWORD 
-function SearchWrite(Search, Write, Type,Write1) gg.clearResults()  gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end if (#data > 0) then gg.toast("搜到"..#data.."条数据") local t = {}  local base = Search[1][2] for i=1, #data do for k, w in ipairs(Write) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].value = w[1]  t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] item[#item].freeze = false gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end gg.setValues(t) end for i=1, #data do for k, w in ipairs(Write1) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = w["Ty"] t[#t].name = w[4]  if (w[3] == 1) then local item = {} item[#item+1] = t[#t] gg.addListItems(item)  end if (w[3] == 2) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item)  end end end else gg.toast("ok", false)  return false end else gg.toast("ok") return false end end 
+function SearchWrite(Search, Write, Type,Write1) gg.clearResults()  gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end 
+if (#data > 0) then 
+    gg.toast("搜到"..#data.."条数据") 
+    
+    
+    
+    --1q
+    
+    
+    local t = {}  
+    local base = Search[1][2] 
+    for i=1, #data do 
+        for k, w in ipairs(Write) do 
+            offset = w[2] - base 
+            t[#t+1] = {} 
+            t[#t].address = data[i] + offset 
+            t[#t].flags = w["Ty"] 
+            t[#t].value = w[1]  
+            t[#t].name = w[4]   
+            if (w[3] == 1) then 
+                local item = {} 
+                item[#item+1] = t[#t] 
+                item[#item].freeze = false 
+                gg.addListItems(item)  
+            end 
+            if (w[3] == 2) then 
+                local item = {} 
+                item[#item+1] = t[#t] 
+                item[#item].freeze = true 
+                gg.addListItems(item)  
+            end 
+        end
+        
+        
+        if moshinu == "1" then 
+            if gongji == nil then
+            gongji = t[2].address
+            gonhjiz = t[2].value
+            end
+        elseif moshinu == "2" then
+            if zhengcha == nil then
+            zhengcha = t[2].address
+            zhengcz = t[2].value
+            end
+        elseif moshinu == "3" then
+            if juji == nil then
+            juji = t[2].address
+            jujiz = t[2].value
+            end
+        elseif moshinu == "4" then
+            if jiqiang == nil then
+            jiqiang = t[2].address
+            jiqiangz = t[2].value
+            end
+        elseif moshinu == "5" then
+            if yiliao ==nil then
+            yiliao = t[2].address
+            yiliaoz = t[2].value
+            end
+        end
+        
+        gg.setValues(t) 
+        
+    end 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    for i=1, #data do 
+        for k, w in ipairs(Write1) do 
+            offset = w[2] - base 
+            t[#t+1] = {} 
+            t[#t].address = data[i] + offset 
+            t[#t].flags = w["Ty"] 
+            t[#t].name = w[4]  
+            if (w[3] == 1) then 
+                local item = {} 
+                item[#item+1] = t[#t] 
+                gg.addListItems(item)  
+            end 
+            if (w[3] == 2) then 
+                local item = {} 
+                item[#item+1] = t[#t] 
+                item[#item].freeze = true 
+                gg.addListItems(item)  
+            end 
+        end 
+    end 
+    else gg.toast("ok", false)  
+    return false 
+end 
+else 
+    gg.toast("ok") 
+    return false 
+end 
+end 
 
 
 
@@ -1727,6 +2111,12 @@ function duquqzing1()
     gg.setVisible(false) 
     gg.clearResults()  
     gg.searchNumber("2096015365;217;0;124732783;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
+    jiancha=gg.getResultCount()
+    --print(jiancha)
+    if jiancha == "0" then
+        duquqzing()
+        return
+    end
     gg.searchNumber("85;0::5", gg.TYPE_DWORD)  
     gg.searchNumber("85", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  
     ludq = gg.getResultCount()  
@@ -1794,7 +2184,13 @@ function duquqzing()
     gg.setVisible(false) 
     gg.clearResults()  
     
-    gg.searchNumber("172350359;126;0;1698905296;144;0;1302600475;213;0::4149", gg.TYPE_DWORD)  
+    gg.searchNumber("172350359;126;0;1698905296;144;0;1302600475;213;0::4149", gg.TYPE_DWORD)
+    jiancha1=gg.getResultCount()
+    --print(jiancha)
+    if jiancha1 == "0" then
+        duquqzing1()
+        return
+    end  
     gg.searchNumber("144;0::5", gg.TYPE_DWORD)  
     gg.searchNumber("144", gg.TYPE_DWORD,false,gg.SIGN_EQUAL)  
     ludq = gg.getResultCount()  
