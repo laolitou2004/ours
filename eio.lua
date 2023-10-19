@@ -327,7 +327,7 @@ iuix = io.open("/storage/emulated/0/data")
 if not iuix then
 
 gg.alert("存档脚本初始化，联系管理(只需进行一次)")
-Main()
+
 else
 chundang()
 end
