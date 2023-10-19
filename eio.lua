@@ -11,22 +11,13 @@ function mimer()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---玩家30 
+--测试
 if mim == 
 --账号
-"68284907" 
+"53184" 
 then waz=(
 --密码
-"https://sharechain.qq.com/6d25bb9cf85ab21569623b83d0b82089"
-)
-
---玩家14 
-elseif mim == 
---账号
-"146238" 
-then waz=(
---密码
-"https://sharechain.qq.com/49d0515f3ef5b789cf479ebbe0363361"
+"https://sharechain.qq.com/8fea6fd1f398fb365e7190319688b8a6"
 )
 
 --玩家4 
@@ -38,60 +29,6 @@ then waz=(
 "https://sharechain.qq.com/47c4dd267586e37e720d47922cbf79db"
 )
 
---玩家37
-elseif mim == 
---账号
-"376952" 
-then waz=(
---密码
-"https://sharechain.qq.com/ba9efec4cc64b3e33e042b7324f53c33"
-)
-
---玩家34
-elseif mim == 
---账号
-"345672" 
-then waz=(
---密码
-"https://sharechain.qq.com/d4e5106fbf341e475f851ead4964ea5c"
-)
-
---玩家23 
-elseif mim == 
---账号
-"23675" 
-then waz=(
---密码
-"https://sharechain.qq.com/1219d88f0615c059f5d39e0ccf6a05eb"
-)
-
---玩家36
-elseif mim == 
---账号
-"36842" 
-then waz=(
---密码
-"https://sharechain.qq.com/8d01b835ed747630302d7b7aeb27c166"
-)
-
---玩家35
-elseif mim == 
---账号
-"2129446043" 
-then waz=(
---密码
-"https://sharechain.qq.com/55fcca781b4662c84826827b9aec521d"
-)
-
---玩家17
-elseif mim == 
---账号
-"17611" 
-then waz=(
---密码
-"https://sharechain.qq.com/120ac5d085a722c5af7eae27ec9c4dec"
-)
-
 --玩家5
 elseif mim == 
 --账号
@@ -99,24 +36,6 @@ elseif mim ==
 then waz=(
 --密码
 "https://sharechain.qq.com/1905c78e7dfcb326c9e8a801f3bf4ef4"
-)
-
---玩家16
-elseif mim == 
---账号
-"66677" 
-then waz=(
---密码
-"https://sharechain.qq.com/876a4874b1167a85c3d54de4f1190bfd"
-)
-
---玩家24
-elseif mim == 
---账号
-"0512" 
-then waz=(
---密码
-"https://sharechain.qq.com/067e4832bc493b285f60aaa9956ecb6d"
 )
 
 --玩家8
@@ -128,6 +47,60 @@ then waz=(
 "https://sharechain.qq.com/da158cb19d2bbfeb79aa4afde7286059"
 )
 
+--玩家11
+elseif mim == 
+--账号
+"115642" 
+then waz=(
+--密码
+"https://sharechain.qq.com/860d1ef8965fae3f0f00e21c784c0c8d"
+)
+
+--玩家14 
+elseif mim == 
+--账号
+"146238" 
+then waz=(
+--密码
+"https://sharechain.qq.com/49d0515f3ef5b789cf479ebbe0363361"
+)
+
+--玩家16
+elseif mim == 
+--账号
+"66677" 
+then waz=(
+--密码
+"https://sharechain.qq.com/876a4874b1167a85c3d54de4f1190bfd"
+)
+
+--玩家17
+elseif mim == 
+--账号
+"17611" 
+then waz=(
+--密码
+"https://sharechain.qq.com/120ac5d085a722c5af7eae27ec9c4dec"
+)
+
+--玩家23
+elseif mim == 
+--账号
+"233471" 
+then waz=(
+--密码
+"https://sharechain.qq.com/1219d88f0615c059f5d39e0ccf6a05eb"
+)
+
+--玩家24
+elseif mim == 
+--账号
+"0512" 
+then waz=(
+--密码
+"https://sharechain.qq.com/067e4832bc493b285f60aaa9956ecb6d"
+)
+
 --玩家25
 elseif mim == 
 --账号
@@ -135,6 +108,51 @@ elseif mim ==
 then waz=(
 --密码
 "https://sharechain.qq.com/edff30b9266a1c90612413675485d8f5"
+)
+
+--玩家26
+elseif mim == 
+--账号
+"2638416" 
+then waz=(
+--密码
+"https://sharechain.qq.com/71101148ed2aa7a5849d8b21eeb6a9bc"
+)
+
+--玩家27
+elseif mim == 
+--账号
+"35756" 
+then waz=(
+--密码
+"https://sharechain.qq.com/3331999162b4d0ac8fef4ede523900a7"
+)
+
+--玩家28
+elseif mim == 
+--账号
+"0326045" 
+then waz=(
+--密码
+"https://sharechain.qq.com/ccd626915c8d24bc44653fd84a3ba3db"
+)
+
+--玩家29
+elseif mim == 
+--账号
+"264375" 
+then waz=(
+--密码
+"https://sharechain.qq.com/1cc28050ed0e6bd3c69e9d993218aa44"
+)
+
+--玩家30 
+elseif mim == 
+--账号
+"68284907" 
+then waz=(
+--密码
+"https://sharechain.qq.com/6d25bb9cf85ab21569623b83d0b82089"
 )
 
 --玩家31
@@ -155,42 +173,6 @@ then waz=(
 "https://sharechain.qq.com/f80e87b7509114620153e974f0c8ba09"
 )
 
---玩家27
-elseif mim == 
---账号
-"35756" 
-then waz=(
---密码
-"https://sharechain.qq.com/3331999162b4d0ac8fef4ede523900a7"
-)
-
---玩家29
-elseif mim == 
---账号
-"264375" 
-then waz=(
---密码
-"https://sharechain.qq.com/1cc28050ed0e6bd3c69e9d993218aa44"
-)
-
---玩家23
-elseif mim == 
---账号
-"233471" 
-then waz=(
---密码
-"https://sharechain.qq.com/1219d88f0615c059f5d39e0ccf6a05eb"
-)
-
---玩家26
-elseif mim == 
---账号
-"2638416" 
-then waz=(
---密码
-"https://sharechain.qq.com/71101148ed2aa7a5849d8b21eeb6a9bc"
-)
-
 --玩家32
 elseif mim == 
 --账号
@@ -209,33 +191,41 @@ then waz=(
 "https://sharechain.qq.com/d5ee953401cb93e808f9e69ea6f25e38"
 )
 
---玩家11
+--玩家34
 elseif mim == 
 --账号
-"115642" 
+"345672" 
 then waz=(
 --密码
-"https://sharechain.qq.com/860d1ef8965fae3f0f00e21c784c0c8d"
+"https://sharechain.qq.com/d4e5106fbf341e475f851ead4964ea5c"
 )
 
---玩家28
+--玩家35
 elseif mim == 
 --账号
-"0326045" 
+"2129446043" 
 then waz=(
 --密码
-"https://sharechain.qq.com/ccd626915c8d24bc44653fd84a3ba3db"
+"https://sharechain.qq.com/55fcca781b4662c84826827b9aec521d"
 )
 
---测试
+--玩家36
 elseif mim == 
 --账号
-"53184" 
+"36842" 
 then waz=(
 --密码
-"https://sharechain.qq.com/8fea6fd1f398fb365e7190319688b8a6"
+"https://sharechain.qq.com/8d01b835ed747630302d7b7aeb27c166"
 )
 
+--玩家37
+elseif mim == 
+--账号
+"376952" 
+then waz=(
+--密码
+"https://sharechain.qq.com/ba9efec4cc64b3e33e042b7324f53c33"
+)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -348,69 +338,7 @@ end
 
 
 
------------------改枪
---[[
-function GQ()
-  local t = gg.choice({
-  "初始枪",
-  "初始筒子",
-  }, nil, "")
-  if t == nil then Main() end
-  if t==1 then qiang() end
-  if t==2 then HJ() end
-end
 
-function GQa()
-  local t = gg.choice({
-  "初始枪",
-  "初始筒子",
-  }, nil, "")
-  if t == nil then Main() end
-  if t==1 then qianga() end
-  if t==2 then HJa() end
-end
-
---枪
-function qiang()
-  local t = gg.choice({
-  "m3",
-  "初始喷子",
-  "初始狙击",
-  "初始机枪",
-  "初始手枪",
-  "铲子",
-  "初始手雷",
-  }, nil, "")
-  if t == nil then GQ() end
-  if t==1 then m3() end
-  if t==2 then pen() end
-  if t==3 then ju() end
-  if t==4 then ji() end
-  if t==5 then shou() end
-  if t==6 then chan() end
-  if t==7 then shoulei() end
-end
-
-function qianga()
-  local t = gg.choice({
-  "m3",
-  "初始喷子",
-  "初始狙击",
-  "初始机枪",
-  "初始手枪",
-  "铲子",
-  "初始手雷",
-  }, nil, "")
-  if t == nil then GQa() end
-  if t==1 then m3a() end
-  if t==2 then pena() end
-  if t==3 then jua() end
-  if t==4 then jia() end
-  if t==5 then shoua() end
-  if t==6 then chana() end
-  if t==7 then shouleia() end
-end
---]]
 function m3a()
   gg.setRanges(32)
   local dataType = 4
@@ -882,6 +810,7 @@ end
 
 
 --火箭
+--[[
 function HJ()
   local t = gg.choice({
   "初始筒子",
@@ -913,7 +842,7 @@ function HJ()
   if t==12 then Hj2()Hj14() end
   if t==13 then Hj2()Hj15() end
 end
-
+--]]
 
 
 
@@ -946,35 +875,18 @@ end
 
 
 function HJa()
-  local t = gg.choice({
-  "初始筒子",
-  "139",
-  "125",
-  "164",
-  "86",
-  "165",
-  "202",
-  "151",
-  "98",
-  "169",
-  "96",
-  "93",
-  "67",
-  }, nil, "")
-  if t == nil then GQ() end
-  if t==1 then Hj2a()Hj1() end
-  if t==2 then Hj2a()Hj3() end
-  if t==3 then Hj2a()Hj4() end
-  if t==4 then Hj2a()Hj5() end
-  if t==5 then Hj2a()Hj6() end
-  if t==6 then Hj2a()Hj7() end
-  if t==7 then Hj2a()Hj8() end
-  if t==8 then Hj2a()Hj9() end
-  if t==9 then Hj2a()Hj10() end
-  if t==10 then Hj2a()Hj11() end
-  if t==11 then Hj2a()Hj12() end
-  if t==12 then Hj2a()Hj14() end
-  if t==13 then Hj2a()Hj15() end
+  if shu[16] == "139" then Hj2a()Hj3() end
+  if shu[16] == "125" then Hj2a()Hj4() end
+  if shu[16] == "164" then Hj2a()Hj5() end
+  if shu[16] == "86" then Hj2a()Hj6() end
+  if shu[16] == "165" then Hj2a()Hj7() end
+  if shu[16] == "202" then Hj2a()Hj8() end
+  if shu[16] == "151" then Hj2a()Hj9() end
+  if shu[16] == "98" then Hj2a()Hj10() end
+  if shu[16] == "169" then Hj2a()Hj11() end
+  if shu[16] == "96" then Hj2a()Hj12() end
+  if shu[16] == "93" then Hj2a()Hj14() end
+  if shu[16] == "67" then Hj2a()Hj15() end
 end
 
 
@@ -1613,7 +1525,7 @@ function duquq()
     local si={"m3","","喷子","","狙击","","机枪","","手枪","","铲子","","手雷","","筒子","",}
     local sio={nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",nil,"0",}
     local zio={"checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number","checkbox","number",}
-    local shu=gg.prompt(si,sio,zio)
+    shu=gg.prompt(si,sio,zio)
     if shu == nil then
         Main()
     else
@@ -1687,7 +1599,7 @@ function duquq()
                 shu[13]=false
             elseif shu[15] == true then
                 if shu[16] == "0" then
-                    HJ()
+                    Hj2()Hj1()
                 else
                     xi = shu[16]
                     duqiu()
@@ -2043,7 +1955,14 @@ function qingyou()
     chundang()
 end
 
-function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
+function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() 
+local bint = "【https://raw.githubusercontent.com/laolitou2004/ours/main/eio.lua】" 
+local bxioen= gg.makeRequest(bint:match("【(.-)】")).content 
+if bxioen == nil then 
+print("错误代码1035，加群获得帮助") 
+os.exit()
+end 
+local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.clearResults() gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
 function fingongn()
 while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then 
 duquqzing1()
