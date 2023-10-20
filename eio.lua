@@ -5,7 +5,7 @@ hk = 2
         2  联网模式
 --]]
 
-
+--[[
 function mimer()
 
 
@@ -233,7 +233,7 @@ then waz=(
 else print("账号错误") os.exit() end end
 
 
-
+--]]
 
 
 
@@ -2010,23 +2010,23 @@ end
 
 
 function quanziat1()
-    xi = "210"
+    xi = "218"
     duqiu()
     m3a()
     
-    xi = "203"
+    xi = "215"
     duqiu()
     pena()
     
-    xi = "208"
+    xi = "219"
     duqiu()
     jua()
     
-    xi = "207"
+    xi = "216"
     duqiu()
     jia()
     
-    xi = "209"
+    xi = "217"
     duqiu()
     shoua()
     
@@ -2351,19 +2351,86 @@ function qingyou()
     chundang()
 end
 
-function ckk() if hk == 1 then XGCK = 1 elseif hk == 2 then mimi() end end function mimi() shu = gg.prompt({''}) if shu==nil then print(xiob) os.exit() else mim=shu[1] mimer() jianmin() end end function jianmin() 
-local bint = "【https://raw.githubusercontent.com/laolitou2004/ours/main/eio.lua】" 
-local bxioen= gg.makeRequest(bint:match("【(.-)】")).content 
-if bxioen == nil then 
-print("错误代码1035，加群获得帮助") 
-os.exit()
+function ckk() 
+    if hk == 1 then 
+        XGCK = 1 
+    elseif hk == 2 then 
+        mimi() 
+    end 
+end
+
+function mimi()
+    shu = gg.prompt({''})
+    if shu==nil then
+        print(xiob)
+        os.exit() 
+    else
+        if shu[1] == "" then
+            print(xiob)
+            os.exit()
+        end
+        nim=shu[1]
+        ap = gg.makeRequest("https://sharechain.qq.com/aeb2e1cb828b3f05d0ce8bbc9ee84d7c").content
+        if ap == nil then 
+            print(xiob) 
+            os.exit() 
+        end
+        
+        jbk1 = ap:match("测试(.-)检测点")
+        jbk= jbk1:match(nim)
+        --print(jbk)
+        if jbk == nil then
+            print(xiob) 
+            os.exit() 
+        else
+            bk = ap:match(nim.." (.-)】")  
+            jianmin() 
+        end
+    end 
+end
+
+
+
+
+function jianmin() 
+    local bint = "【https://raw.githubusercontent.com/laolitou2004/ours/main/eio.lua】" 
+    local bxioen= gg.makeRequest(bint:match("【(.-)】")).content 
+    if bxioen == nil then 
+        print("错误代码1035，加群获得帮助") 
+        os.exit()
+    end 
+    
+    
+    
+        gg.clearResults() 
+        gg.setVisible(false) 
+        gg.searchNumber (";"..bk, W) 
+        local yan = gg.getResultCount() 
+        gg.clearResults() 
+        if (yan>1) then 
+            jinc() 
+        end 
+        if (yan<1) then 
+            print(xiob) 
+            os.exit() 
+        end 
+    
 end 
-local ap = gg.makeRequest(waz).content if ap == nil then print(xiob) os.exit() else local bk = ap:match("【(.-)】") gg.clearResults() gg.setVisible(false) gg.searchNumber (";"..bk, W) local yan = gg.getResultCount() gg.clearResults() if (yan>1) then jinc() end if (yan<1) then print(xiob) os.exit() end end end function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
+
+
+function jinc() xoja = gg.getTargetPackage() if xoja== "com.gamedevltd.wwh" then XGCK = 1 else print(xiob) os.exit() end end function qyis() qinb = gg.getListItems() bin = #qinb for ouq = 1, bin do opui= qinb[ouq].name opina = qinb[ouq] if opui == cio then ti = {} ti[1] = opina gg.removeListItems(ti) end end end function qgos() ioinb = gg.getListItems() bingi = #ioinb for ougo = 1, bingi do opgou= ioinb[ougo].name opingo = ioinb[ougo] if opgou == cgio then tigo = {} tigo[1] = opingo gg.removeListItems(tigo) end end end function Exit()  gg.setVisible(false)end 
 function fingongn()
 while 1 do if gg.isVisible(1) then ckk() gg.setVisible(false)  end gg.clearResults()  if XGCK == 1 then 
 duquqzing1()
  gg.showUiButton()  while(true) do if gg.isClickedUiButton() then Main()  end gg.sleep(100)  end end end end
 
 for m=1, 1 do
+
+jsjswjjwx=gg.makeRequest("www")
+if jsjswjjwx == "java.net.MalformedURLException: no protocol: www" then
 Main1()
+end
+
+
+
 end
