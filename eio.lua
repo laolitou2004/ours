@@ -2383,7 +2383,10 @@ function mimi()
             print(xiob) 
             os.exit() 
         else
-            bk = ap:match(nim.." (.-)】")  
+            bk = ap:match(nim.." (.-)】") 
+            if bk == nil then
+            bk = ap:match("&nbsp;(.-)】")
+            end
             jianmin() 
         end
     end 
@@ -2404,6 +2407,7 @@ function jianmin()
     
         gg.clearResults() 
         gg.setVisible(false) 
+        --print(jbk1)
         gg.searchNumber (";"..bk, W) 
         local yan = gg.getResultCount() 
         gg.clearResults() 
