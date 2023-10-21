@@ -526,40 +526,7 @@ function shoulei()
 end
 
 
---火箭
---[[
-function HJ()
-  local t = gg.choice({
-  "初始筒子",
-  "139",
-  "125",
-  "164",
-  "86",
-  "165",
-  "202",
-  "151",
-  "98",
-  "169",
-  "96",
-  "93",
-  "67",
-  }, nil, "")
-  if t == nil then GQ() end
-  if t==1 then Hj2()Hj1() end
-  if t==2 then Hj2()Hj3() end
-  if t==3 then Hj2()Hj4() end
-  if t==4 then Hj2()Hj5() end
-  if t==5 then Hj2()Hj6() end
-  if t==6 then Hj2()Hj7() end
-  if t==7 then Hj2()Hj8() end
-  if t==8 then Hj2()Hj9() end
-  if t==9 then Hj2()Hj10() end
-  if t==10 then Hj2()Hj11() end
-  if t==11 then Hj2()Hj12() end
-  if t==12 then Hj2()Hj14() end
-  if t==13 then Hj2()Hj15() end
-end
---]]
+
 
 
 
@@ -799,29 +766,7 @@ end
 
 
 
---枪值 
---[[function QZ()
-  shu = gg.prompt({'枪值'})
-  if shu == nil then
-    GQ()
-  elseif shu[1] == "217" then
-    ux = ""
-    uxa = "217"
-    uxb = ""
-  elseif shu[1] == "161" then
-    ux = ""
-    uxa = "161"
-    uxb = ""
-  else
-    ux = shu[1]
-    uxa = shu[1]
-    uxb = ";"
-  end  
-  oui1()
-end
---]]
 
---1q
 
 
 function wydi2()
@@ -877,8 +822,7 @@ else
     
     gg.setValues(x)
     end
-    --gg.clearResults()  
-    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+
 end
 
 
@@ -893,8 +837,7 @@ else
     
     gg.setValues(x)
     end
-    --gg.clearResults()  
-    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+
 end
 
 
@@ -909,8 +852,7 @@ else
     
     gg.setValues(x)
     end
-    --gg.clearResults()  
-    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+
 end
 
 function wydi12()       
@@ -924,8 +866,7 @@ else
     
     gg.setValues(x)
     end
-    --gg.clearResults()  
-    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+
 end
 
 function wydi1()       
@@ -941,8 +882,7 @@ else
     gg.setValues(x)
    end
     
-    --gg.clearResults()  
-    --gg.searchAddress(gongji,-1,gg.TYPE_DWORD)
+
 end
 
 iotni = "1"
@@ -1013,7 +953,7 @@ else
   local ox = {}
     ox[1] = {}
     ox[1].address = juji
-    --x[1].value = gonhjiz
+
     ox[1].flags = F
     ox[1].freeze = false
     ox[1].name = "狙击参数"
@@ -1021,7 +961,7 @@ else
 local ox = {}
     ox[1] = {}
     ox[1].address = juji-4
-    --x[1].value = gonhjiz
+
     ox[1].flags = D
     ox[1].freeze = false
     ox[1].name = "狙击属性"
@@ -1037,7 +977,7 @@ else
   local ox = {}
     ox[1] = {}
     ox[1].address = jiqiang
-    --x[1].value = gonhjiz
+
     ox[1].flags = F
     ox[1].freeze = false
     ox[1].name = "机枪参数"
@@ -1045,7 +985,7 @@ else
 local ox = {}
     ox[1] = {}
     ox[1].address = jiqiang-4
-    --x[1].value = gonhjiz
+
     ox[1].flags = D
     ox[1].freeze = false
     ox[1].name = "机枪属性"
@@ -1182,7 +1122,7 @@ iotnx = "1"
 function potank()
 
     for maslin = iotnx,1 do
-    --gg.toast("11")
+
     
     t343() hushi3() xieerman3()
     
@@ -1384,7 +1324,7 @@ function YS()
 end
   
   
-  --坦克连发 蹲着1站着0死了1活着0
+
   
   
   
@@ -1400,7 +1340,7 @@ function yisu1()
   {2.5,0},
   {3.5,-0x18},
   {0.5,0x16c},
-  --{1.401298464324817E-45,0x1fc},
+
   {9.183689745645554E-41,0x280},
   {0.0,0x10},
   }
@@ -1563,7 +1503,7 @@ if (#data > 0) then
     
     
     
-    --1q
+    
     
     
     local t = {}  
@@ -1809,7 +1749,7 @@ function duqiu1()
     if bx==nil then
         gg.alert(2)
     else
-        --gg.alert(bx)
+        
         xpo = bx
     end
 end
@@ -1823,7 +1763,7 @@ function duqiu()
     if bx==nil then
         gg.alert(1)
     else
-        --gg.alert(bx)
+     
         xpo = bx
     end    
 end
@@ -1849,28 +1789,12 @@ function duquqzing1()
         table.sort(t, function(a, b) return a.address > b.address end)
         return t
     end
---[[
-    local function getAvailableFilename_FeatureCode()
-        local basePath = gg.getFile():match("(.*/)") -- "/storage/emulated/0/Notes/"
-        local filename
-        local i = 1
-        while true do
-            filename = basePath .. string.format("获取数据%02d.txt", i)
-            local file = io.open(filename, "r")
-            if file == nil then
-                break
-            end
-            file:close()
-            i = i + 1
-        end
-        return filename
-    end
---]]
+
     gg.setVisible(false) 
     gg.clearResults()  
     gg.searchNumber("2096015365;217;0;124732783;85;0;1765970123;161;0::4149", gg.TYPE_DWORD)  
     jiancha=gg.getResultCount()
-    --print(jiancha)
+
     if jiancha == "0" then
         duquqzing()
         return
@@ -1894,13 +1818,12 @@ function duquqzing1()
         content = content .. string.format("qining %s\n", tostring(v.value))
     end    
     
-    --ouwiq = "qining 161\n"
+
     gailvj = content:match("qining 161\nqining (.-)\nqining 1765970123\n")
     if gailvj==nil then
         duquqzing()
     end
-    --print(gailvj)
-    --.."qining (.-)\n"
+
 end
 
 function duquqzing()
@@ -1922,29 +1845,13 @@ function duquqzing()
         table.sort(t, function(a, b) return a.address > b.address end)
         return t
     end
---[[
-    local function getAvailableFilename_FeatureCode()
-        local basePath = gg.getFile():match("(.*/)") -- "/storage/emulated/0/Notes/"
-        local filename
-        local i = 1
-        while true do
-            filename = basePath .. string.format("获取数据%02d.txt", i)
-            local file = io.open(filename, "r")
-            if file == nil then
-                break
-            end
-            file:close()
-            i = i + 1
-        end
-        return filename
-    end
---]]
+
     gg.setVisible(false) 
     gg.clearResults()  
     
     gg.searchNumber("172350359;126;0;1698905296;144;0;1302600475;213;0::4149", gg.TYPE_DWORD)
     jiancha1=gg.getResultCount()
-    --print(jiancha)
+
     if jiancha1 == "0" then
         duquqzing1()
         return
@@ -1968,13 +1875,12 @@ function duquqzing()
         content = content .. string.format("qining %s\n", tostring(v.value))
     end    
     
-    --ouwiq = "qining 161\n"
+  
     gailvj = content:match("qining 213\nqining (.-)\nqining 1302600475\n")
     if gailvj==nil then
         duquqzing1()
     end
-    --print(gailvj) --172350359;126;1698905296;144;1302600475;213:4145
-    --.."qining (.-)\n"
+
 end
 
 function dzizhi1()
@@ -2140,7 +2046,7 @@ function mimi()
         
         jbk1 = ap:match("测试(.-)检测点")
         jbk= jbk1:match(nim)
-        --print(jbk)
+    
         if jbk == nil then
             dierz()
             return
@@ -2167,7 +2073,7 @@ function dierz()
     end
     jbk1 = ap:match("测试(.-)检测点")
     jbk= jbk1:match(nim)
-        --print(jbk)
+     
     if jbk == nil then
         print(xiob) 
         os.exit() 
@@ -2198,7 +2104,7 @@ function jianmin()
     
         gg.clearResults() 
         gg.setVisible(false) 
-        --print(jbk1)
+   
         gg.searchNumber (";"..bk, W) 
         local yan = gg.getResultCount() 
         gg.clearResults() 
