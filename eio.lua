@@ -5,250 +5,6 @@ hk = 2
         2  联网模式
 --]]
 
---[[
-function mimer()
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
---测试
-if mim == 
---账号
-"53184" 
-then waz=(
---密码
-"https://sharechain.qq.com/8fea6fd1f398fb365e7190319688b8a6"
-)
-
---玩家4 
-elseif mim == 
---账号
-"43783" 
-then waz=(
---密码
-"https://sharechain.qq.com/47c4dd267586e37e720d47922cbf79db"
-)
-
---玩家5
-elseif mim == 
---账号
-"9099" 
-then waz=(
---密码
-"https://sharechain.qq.com/1905c78e7dfcb326c9e8a801f3bf4ef4"
-)
-
---玩家8
-elseif mim == 
---账号
-"34618" 
-then waz=(
---密码
-"https://sharechain.qq.com/da158cb19d2bbfeb79aa4afde7286059"
-)
-
---玩家11
-elseif mim == 
---账号
-"115642" 
-then waz=(
---密码
-"https://sharechain.qq.com/860d1ef8965fae3f0f00e21c784c0c8d"
-)
-
---玩家14 
-elseif mim == 
---账号
-"146238" 
-then waz=(
---密码
-"https://sharechain.qq.com/49d0515f3ef5b789cf479ebbe0363361"
-)
-
---玩家16
-elseif mim == 
---账号
-"66677" 
-then waz=(
---密码
-"https://sharechain.qq.com/876a4874b1167a85c3d54de4f1190bfd"
-)
-
---玩家17
-elseif mim == 
---账号
-"17611" 
-then waz=(
---密码
-"https://sharechain.qq.com/120ac5d085a722c5af7eae27ec9c4dec"
-)
-
---玩家23
-elseif mim == 
---账号
-"233471" 
-then waz=(
---密码
-"https://sharechain.qq.com/1219d88f0615c059f5d39e0ccf6a05eb"
-)
-
---玩家24
-elseif mim == 
---账号
-"0512" 
-then waz=(
---密码
-"https://sharechain.qq.com/067e4832bc493b285f60aaa9956ecb6d"
-)
-
---玩家25
-elseif mim == 
---账号
-"1348781519" 
-then waz=(
---密码
-"https://sharechain.qq.com/edff30b9266a1c90612413675485d8f5"
-)
-
---玩家26
-elseif mim == 
---账号
-"2638416" 
-then waz=(
---密码
-"https://sharechain.qq.com/71101148ed2aa7a5849d8b21eeb6a9bc"
-)
-
---玩家27
-elseif mim == 
---账号
-"35756" 
-then waz=(
---密码
-"https://sharechain.qq.com/3331999162b4d0ac8fef4ede523900a7"
-)
-
---玩家28
-elseif mim == 
---账号
-"0326045" 
-then waz=(
---密码
-"https://sharechain.qq.com/ccd626915c8d24bc44653fd84a3ba3db"
-)
-
---玩家29
-elseif mim == 
---账号
-"264375" 
-then waz=(
---密码
-"https://sharechain.qq.com/1cc28050ed0e6bd3c69e9d993218aa44"
-)
-
---玩家30 
-elseif mim == 
---账号
-"68284907" 
-then waz=(
---密码
-"https://sharechain.qq.com/6d25bb9cf85ab21569623b83d0b82089"
-)
-
---玩家31
-elseif mim == 
---账号
-"9527" 
-then waz=(
---密码
-"https://sharechain.qq.com/c9be84bfa7b87901b3ffad31a29df6e0"
-)
-
---玩家31-2
-elseif mim == 
---账号
-"9528" 
-then waz=(
---密码
-"https://sharechain.qq.com/f80e87b7509114620153e974f0c8ba09"
-)
-
---玩家32
-elseif mim == 
---账号
-"96110863" 
-then waz=(
---密码
-"https://sharechain.qq.com/2311f047829c701d323c0df3256d8669"
-)
-
---玩家33
-elseif mim == 
---账号
-"4561239564" 
-then waz=(
---密码
-"https://sharechain.qq.com/d5ee953401cb93e808f9e69ea6f25e38"
-)
-
---玩家34
-elseif mim == 
---账号
-"345672" 
-then waz=(
---密码
-"https://sharechain.qq.com/d4e5106fbf341e475f851ead4964ea5c"
-)
-
---玩家35
-elseif mim == 
---账号
-"2129446043" 
-then waz=(
---密码
-"https://sharechain.qq.com/55fcca781b4662c84826827b9aec521d"
-)
-
---玩家36
-elseif mim == 
---账号
-"36842" 
-then waz=(
---密码
-"https://sharechain.qq.com/8d01b835ed747630302d7b7aeb27c166"
-)
-
---玩家37
-elseif mim == 
---账号
-"376952" 
-then waz=(
---密码
-"https://sharechain.qq.com/ba9efec4cc64b3e33e042b7324f53c33"
-)
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-else print("账号错误") os.exit() end end
-
-
---]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 xiob=("错误代码1156，加群获得帮助")
 
@@ -289,51 +45,10 @@ function Main()
   if t==7 then wydi() end
 end
 
-iotnx = "1"
-
-function potank()
-
-    for maslin = iotnx,1 do
-    --gg.toast("11")
-    
-    t343() hushi3() xieerman3()
-    
-end
-    iotnx = iotnx+1
-    if iotnx >2 then
-     tk()
-     end
-end
 
 
-function chundang()
-  local t = gg.choice({
-  zhang1,
-  zhang2,
-  zhang3,
-  "清除游戏存档"
-  }, nil, "")
-  if t == nil then Main1() end
-  if t==1 then dzizhi1() end
-  if t==2 then dzizhi2() end
-  if t==3 then dzizhi3() end
-  if t==4 then qingyou() end
-end
 
-zhang1 = ""
-zhang2 = ""
-zhang3 = ""
 
-function cundann()
-iuix = io.open("/storage/emulated/0/data")
-if not iuix then
-
-gg.alert("存档脚本初始化，联系管理(只需进行一次)")
-
-else
-chundang()
-end
-end
 
 
 
@@ -1462,6 +1177,22 @@ function yla()--提取医疗兵56
 end
 
 ----------改坦克
+iotnx = "1"
+
+function potank()
+
+    for maslin = iotnx,1 do
+    --gg.toast("11")
+    
+    t343() hushi3() xieerman3()
+    
+end
+    iotnx = iotnx+1
+    if iotnx >2 then
+     tk()
+     end
+end
+
 function tk()
   local t = gg.choice({
   "t34",
@@ -1789,7 +1520,34 @@ end
 
 
 
+function chundang()
+  local t = gg.choice({
+  zhang1,
+  zhang2,
+  zhang3,
+  "清除游戏存档"
+  }, nil, "")
+  if t == nil then Main1() end
+  if t==1 then dzizhi1() end
+  if t==2 then dzizhi2() end
+  if t==3 then dzizhi3() end
+  if t==4 then qingyou() end
+end
 
+zhang1 = ""
+zhang2 = ""
+zhang3 = ""
+
+function cundann()
+iuix = io.open("/storage/emulated/0/data")
+if not iuix then
+
+gg.alert("存档脚本初始化，联系管理(只需进行一次)")
+
+else
+chundang()
+end
+end
 
 
 
@@ -2391,7 +2149,12 @@ function mimi()
             if bk == nil then
                 bk = ap:match("&nbsp;(.-)】")
             end
-            jianmin() 
+            if bk == nil then
+                print("1042") 
+                os.exit() 
+            else
+               jianmin() 
+            end
         end
     end 
 end
@@ -2413,7 +2176,12 @@ function dierz()
         if bk == nil then
             bk = ap:match("&nbsp;(.-)】")
         end
-        jianmin() 
+        if bk == nil then
+            print("1042") 
+            os.exit() 
+        else
+            jianmin() 
+        end
     end
 end
 
