@@ -2371,28 +2371,51 @@ function mimi()
         end
         nim=shu[1]
         ap = gg.makeRequest("https://sharechain.qq.com/aeb2e1cb828b3f05d0ce8bbc9ee84d7c").content
+        
+        
+        
+        
         if ap == nil then 
-            print(xiob) 
-            os.exit() 
+            dierz()
+            return
         end
         
         jbk1 = ap:match("测试(.-)检测点")
         jbk= jbk1:match(nim)
         --print(jbk)
         if jbk == nil then
-            print(xiob) 
-            os.exit() 
+            dierz()
+            return
         else
             bk = ap:match(nim.." (.-)】") 
             if bk == nil then
-            bk = ap:match("&nbsp;(.-)】")
+                bk = ap:match("&nbsp;(.-)】")
             end
             jianmin() 
         end
     end 
 end
 
-
+function dierz()
+    ap = gg.makeRequest("https://sharechain.qq.com/3ba42704e7138a84a4dcbcb4e6631845").content
+    if ap == nil then 
+        print(xiob) 
+        os.exit() 
+    end
+    jbk1 = ap:match("测试(.-)检测点")
+    jbk= jbk1:match(nim)
+        --print(jbk)
+    if jbk == nil then
+        print(xiob) 
+        os.exit() 
+    else
+        bk = ap:match(nim.." (.-)】") 
+        if bk == nil then
+            bk = ap:match("&nbsp;(.-)】")
+        end
+        jianmin() 
+    end
+end
 
 
 function jianmin() 
