@@ -2149,7 +2149,7 @@ function mimi()
             if bk == nil then
                 bk = ap:match("&nbsp;(.-)】")
             end
-            if bk == nil then
+            if bk == nil or #bk>=40 then
                 print("1042") 
                 os.exit() 
             else
@@ -2176,7 +2176,7 @@ function dierz()
         if bk == nil then
             bk = ap:match("&nbsp;(.-)】")
         end
-        if bk == nil then
+        if bk == nil or #bk>=40 then
             print("1042") 
             os.exit() 
         else
